@@ -1,0 +1,17 @@
+    public static void main(String[] args) {
+ // Escribe un programa que permita al usuario ingresar números enteros
+//hasta que ingrese el número 0. Luego, muestra la suma de todos los números ingresados.
+
+        Scanner scanner = new Scanner(System.in);
+        int num, sum = 0;
+
+        do {
+            System.out.print("Introduce un número entero (0 para salir): ");
+            num = scanner.nextInt();
+
+            sum += num;
+        } while (num != 0);
+
+        System.out.println("La suma de los números ingresados es: " + sum);
+    }
+}
