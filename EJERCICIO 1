@@ -1,0 +1,18 @@
+    public static void main(String[] args) {
+        //Crea un programa que solicite al usuario un número entero y muestre la
+        //suma de todos los números impares desde 1 hasta ese número.
+            Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce un número entero: ");
+        int num = scanner.nextInt();
+
+        int suma = 0;
+        for (int i = 1; i <= num; i++) {
+            if (i % 2 != 0) { 
+                suma += i;
+            }
+        }
+
+        System.out.println("La suma de todos los números impares desde 1 hasta " + num + " es: " + suma);
+    }
+}
