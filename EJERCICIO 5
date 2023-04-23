@@ -1,0 +1,27 @@
+    public static void main(String[] args) {
+        // TODO code application logic her
+               Scanner scanner = new Scanner(System.in);
+        int num, countPos = 0, countNeg = 0;
+
+        System.out.print("Introduce una serie de números enteros separados por espacios: ");
+        String input = scanner.nextLine();
+
+        // Dividir la cadena de entrada en un arreglo de cadenas usando espacios como separador
+        String[] numArray = input.split(" ");
+
+        // Iterar sobre cada cadena en el arreglo y convertirla a un número entero
+        for (int i = 0; i < numArray.length; i++) {
+            num = Integer.parseInt(numArray[i]);
+
+            // Incrementar el contador correspondiente según si el número es positivo o negativo
+            if (num > 0) {
+                countPos++;
+            } else if (num < 0) {
+                countNeg++;
+            }
+        }
+
+        // Mostrar los resultados
+        System.out.println("Hay " + countPos + " números positivos y " + countNeg + " números negativos.");
+    }
+}
