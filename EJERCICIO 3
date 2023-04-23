@@ -1,0 +1,17 @@
+    public static void main(String[] args) {
+        // Crea un programa que solicite al usuario un número entero y muestre la
+       //tabla de multiplicar de ese número
+               Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese un número entero: ");
+        int num = sc.nextInt();
+
+        System.out.println("Tabla de multiplicar de " + num + ":");
+        for (int i = 1; i <= 10; i++) {
+            int resultado = num * i;
+            System.out.println(num + " x " + i + " = " + resultado);
+        }
+
+        sc.close();
+    }
+}
